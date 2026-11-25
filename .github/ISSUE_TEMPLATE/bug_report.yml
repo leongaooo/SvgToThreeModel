@@ -1,0 +1,35 @@
+name: Bug 报告
+description: 报告一个可复现的缺陷
+title: "[bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请附上可复现的 SVG 文件或最小样例，这会极大加快定位速度。
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 上传 SVG ...
+        2. 拖动高度滑块到 ...
+        3. 看到 ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 运行环境
+      placeholder: Chrome 130 / Windows 11
